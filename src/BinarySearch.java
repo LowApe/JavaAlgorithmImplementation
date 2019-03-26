@@ -25,12 +25,14 @@ public class BinarySearch {
         }
         return -1;
     }
-    /**
-     * Test类
-     * @param args
-     */
-    public static void main(String[] args) {
-        int[] arry={1,2,3,4,5,7,9,10};
-        System.out.println(search(arry,15));
-    }
+   public static class TestBinarySearch{
+       /**
+        * Test类
+        * @param args
+        */
+       public static void main(String[] args) {
+           int[] arry={1,2,3,4,5,7,9,10};
+           System.out.println(search(arry,15));
+       }
+   }
 }

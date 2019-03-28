@@ -6,6 +6,6 @@
 .
 +-- BinarySearch
 +-- SelectionSort
-+--
++-- KMPAlgorithm
 +--
 ```

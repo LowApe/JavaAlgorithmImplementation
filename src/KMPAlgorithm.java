@@ -47,7 +47,11 @@ public class KMPAlgorithm {
             if(k==-1||p[j]==p[k]){
                 ++k;
                 ++j;
-                next[j]=k;
+                if (p[j]!=p[k]){
+                    next[j]=k;
+                }else{
+                    next[j]=next[k];
+                }
             }else{
                 k = next[k];
             }
@@ -56,8 +60,11 @@ public class KMPAlgorithm {
 
     public static class TestKMP{
         public static void main(String[] args) {
-            String s="dabadcabecbaabadcabfasdads";
-            String p="abadcabf";
+//            String s="dabadcabecbaabadcabfasdads";
+//            String p="abadcabf";
+
+            String s="abacababc";
+            String p="abab";
             next=new int[p.length()];
             //next 数组
             getNext(p.toCharArray(),next);

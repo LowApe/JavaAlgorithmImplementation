@@ -5,6 +5,7 @@
 	- [BinarySearch](#binarysearch)
 	- [SelectionSort](#selectionsort)
 	- [KMPAlgorithm](#kmpalgorithm)
+	- [PMT](#pmt)
 	- [BruteForceStringMatching](#bruteforcestringmatching)
 
 <!-- /TOC -->
@@ -14,4 +15,5 @@
 ## BinarySearch
 ## SelectionSort
 ## KMPAlgorithm
+## PMT
 ## BruteForceStringMatching

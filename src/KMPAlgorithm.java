@@ -47,9 +47,11 @@ public class KMPAlgorithm {
             if(k==-1||p[j]==p[k]){
                 ++k;
                 ++j;
+//                next[j]=k;
                 if (p[j]!=p[k]){
                     next[j]=k;
                 }else{
+                    //如果匹配,进行子串的自我匹配:不是很理解
                     next[j]=next[k];
                 }
             }else{
@@ -60,16 +62,19 @@ public class KMPAlgorithm {
 
     public static class TestKMP{
         public static void main(String[] args) {
-//            String s="dabadcabecbaabadcabfasdads";
-//            String p="abadcabf";
-
-            String s="abacababc";
-            String p="abab";
+            String s="dabadcabecbaabadcabfasdads";
+            String p="abadcabf";
             next=new int[p.length()];
+
             //next 数组
+            System.out.println("next 数组表");
             getNext(p.toCharArray(),next);
+            for (int i = 0; i < next.length; i++) {
+                System.out.print(next[i]+"\t");
+            }
+            System.out.print("\n");
             //搜索
-            System.out.println(KMPSearch(s.toCharArray(),p.toCharArray()));
+            System.out.println("首次出现的位置 "+KMPSearch(s.toCharArray(),p.toCharArray()));
         }
     }
 }

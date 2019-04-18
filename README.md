@@ -6,6 +6,7 @@
 	- [SelectionSort](#selectionsort)
 	- [KMPAlgorithm next数组的KMP](#kmpalgorithm-next数组的kmp)
 	- [PMT 部分匹配表的KMP](#pmt-部分匹配表的kmp)
+	- [QuickSort 快速排序](#quicksort-快速排序)
 	- [RecursionSumArray 递归求和](#recursionsumarray-递归求和)
 	- [BruteForceStringMatching 暴力匹配](#bruteforcestringmatching-暴力匹配)
 
@@ -17,5 +18,6 @@
 ## SelectionSort
 ## KMPAlgorithm next数组的KMP
 ## PMT 部分匹配表的KMP
+## QuickSort 快速排序
 ## RecursionSumArray 递归求和
 ## BruteForceStringMatching 暴力匹配

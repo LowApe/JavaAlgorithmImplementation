@@ -9,7 +9,7 @@
 	- [QuickSort 快速排序](#quicksort-快速排序)
 	- [RecursionSumArray 递归求和](#recursionsumarray-递归求和)
 	- [BruteForceStringMatching 暴力匹配](#bruteforcestringmatching-暴力匹配)
-
+    - [EuclideanAlgorithm 欧几里得算法](#euclideanalgorithm)
 <!-- /TOC -->
 
 

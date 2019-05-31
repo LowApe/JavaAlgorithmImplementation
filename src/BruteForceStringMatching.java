@@ -1,3 +1,6 @@
+/**
+ * 暴露破解字符串匹配
+ */
 public class BruteForceStringMatching {
     public static int Search(char[] s, char[] p) {
         int i = 0;

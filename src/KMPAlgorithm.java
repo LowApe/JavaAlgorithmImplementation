@@ -5,76 +5,77 @@
  * PMT 转换为 next 数组(核心):将PMT 整体后移移位,首位赋值-1
  */
 public class KMPAlgorithm {
-     private static int[] next;
+    private static int[] next;
+
     /**
-     *
      * @param s
      * @param p
      * @return 返回是否查询到
      */
-    public static int KMPSearch(char[] s,char[] p){
-        int i=0;
-        int j=0;
-        int sLen=s.length;
-        int pLen=p.length;
-        while (i<sLen && j<pLen){
-            if(j==-1 || p[j]==s[i]){
+    public static int KMPSearch(char[] s, char[] p) {
+        int i = 0;
+        int j = 0;
+        int sLen = s.length;
+        int pLen = p.length;
+        while (i < sLen && j < pLen) {
+            if (j == -1 || p[j] == s[i]) {
                 i++;
                 j++;
 
-            }else{
-                j=next[j];
+            } else {
+                j = next[j];
             }
         }
-        if(j==pLen){
-            return i-j;
+        if (j == pLen) {
+            return i - j;
         }
         return -1;
     }
 
     /**
      * 通过PMT递推的next数组求得索引之前匹配了的最大长度值
+     *
      * @param p
      * @param next
      */
-    public static void getNext(char[] p,int next[]){
-        int k=-1;
-        int pLen=p.length;
+    public static void getNext(char[] p, int next[]) {
+        int k = -1;
+        int pLen = p.length;
 
-        next[0]=-1;
-        int j=0;
-        while (j<pLen-1){
-            if(k==-1||p[j]==p[k]){
+        next[0] = -1;
+        int j = 0;
+        while (j < pLen - 1) {
+            if (k == -1 || p[j] == p[k]) {
                 ++k;
                 ++j;
 //                next[j]=k;
-                if (p[j]!=p[k]){
-                    next[j]=k;
-                }else{
+                if (p[j] != p[k]) {
+                    next[j] = k;
+                } else {
                     //如果匹配,进行子串的自我匹配:不是很理解
-                    next[j]=next[k];
+                    next[j] = next[k];
                 }
-            }else{
+            } else {
                 k = next[k];
             }
         }
     }
 
-    public static class TestKMP{
+    public static class TestKMP {
         public static void main(String[] args) {
-            String s="dabadcabecbaabadcabfasdads";
-            String p="abadcabf";
-            next=new int[p.length()];
+            String s = "dabadcabecbaabadcabfasdads";
+            String p = "abadcabf";
+            next = new int[p.length()];
 
             //next 数组
             System.out.println("next 数组表");
-            getNext(p.toCharArray(),next);
+            getNext(p.toCharArray(), next);
             for (int i = 0; i < next.length; i++) {
-                System.out.print(next[i]+"\t");
+                System.out.print(next[i] + "\t");
             }
             System.out.print("\n");
             //搜索
-            System.out.println("首次出现的位置 "+KMPSearch(s.toCharArray(),p.toCharArray()));
+            System.out.println("首次出现的位置 " + KMPSearch(s.toCharArray(), p.toCharArray()));
         }
     }
 }

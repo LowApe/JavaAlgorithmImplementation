@@ -2,6 +2,7 @@
 
 - [Java 实现算法](#java-实现算法)
 	- [leetcode](#leetcode)
+		- [T_024_SwapNodesInPairs](#t024swapnodesinpairs)
 		- [T_206_ReverseLinkedList](#t206reverselinkedlist)
 	- [BinarySearch 二分查找](#binarysearch-二分查找)
 	- [SelectionSort](#selectionsort)
@@ -16,6 +17,7 @@
 
 # Java 实现算法
 ## leetcode
+### T_024_SwapNodesInPairs
 ### T_206_ReverseLinkedList
 ## BinarySearch 二分查找
 ## SelectionSort

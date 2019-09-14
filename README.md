@@ -2,6 +2,7 @@
 
 - [Java 实现算法](#java-实现算法)
 	- [leetcode](#leetcode)
+	    - [T_020_ValidParentheses](#t020validparentheses)
 		- [T_024_SwapNodesInPairs](#t024swapnodesinpairs)
 		- [T_141_LinkedListCycle](#t141linkedlistcycle)
 		- [T_206_ReverseLinkedList](#t206reverselinkedlist)
@@ -18,6 +19,7 @@
 
 # Java 实现算法
 ## leetcode
+### T_020_ValidParentheses
 ### T_024_SwapNodesInPairs
 ### T_141_LinkedListCycle
 ### T_206_ReverseLinkedList

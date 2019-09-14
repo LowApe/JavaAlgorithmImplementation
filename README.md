@@ -6,6 +6,7 @@
 		- [T_024_SwapNodesInPairs](#t024swapnodesinpairs)
 		- [T_141_LinkedListCycle](#t141linkedlistcycle)
 		- [T_206_ReverseLinkedList](#t206reverselinkedlist)
+		- [T_232_ImplementQueueUsingStacks](#t232implementqueueusingstacks)
 	- [BinarySearch 二分查找](#binarysearch-二分查找)
 	- [SelectionSort](#selectionsort)
 	- [KMPAlgorithm next数组的KMP](#kmpalgorithm-next数组的kmp)
@@ -23,6 +24,7 @@
 ### T_024_SwapNodesInPairs
 ### T_141_LinkedListCycle
 ### T_206_ReverseLinkedList
+### T_232_ImplementQueueUsingStacks
 ## BinarySearch 二分查找
 ## SelectionSort
 ## KMPAlgorithm next数组的KMP

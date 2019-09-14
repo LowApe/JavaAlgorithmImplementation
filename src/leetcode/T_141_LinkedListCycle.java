@@ -18,7 +18,7 @@ public class T_141_LinkedListCycle {
 //        System.out.println(hasCycle1(initList));
 
         //快慢执政
-        System.out.println(hasCycle1(initList));
+        System.out.println(hasCycle2(initList));
     }
     /**
      *  简单单链表
@@ -84,7 +84,7 @@ public class T_141_LinkedListCycle {
         ListNode slow = head;//一开始保证不相同的位置上
         ListNode fast = head.next;
         while(slow!=fast){
-            if(fast==null || fast.next == null){
+            if(fast==null || fast.next == null){//判断快指针到null
                 return false;
             }
             slow = slow.next;//慢指针移动1个节点

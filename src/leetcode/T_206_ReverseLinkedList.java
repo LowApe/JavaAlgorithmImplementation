@@ -82,6 +82,9 @@ public class T_206_ReverseLinkedList {
         if(head == null || head.next == null){//递归的基准条件
             return head;
         }
+        /**
+         * 重新debug 了一下，发现之前理解错了，这些节点并没有移动，而是链表的形式不断增。
+         */
         ListNode p = reverseList2(head.next);//递归从下一个节点开始的链表进行反转
         head.next.next =head;//将下一节点指向进行反转
         head.next = null;
